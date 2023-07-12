@@ -14,16 +14,12 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Sucessfully connected to game server")
-    conn.write("Name: JD")//is thi sin the right place?
-  })
-  
-  // conn.on("write", (data) => {
-  //   console.log("Name: JD")
-  // })
+    conn.write("Name: JD")
 
-  conn.on("connect", () => {
-    conn.write("Name: JD");
-  });
+    
+
+  })
+
 
   
   // interpret incoming data as text
