@@ -15,7 +15,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Sucessfully connected to game server")
     conn.write("Name: JD")
-
     
 
   })
