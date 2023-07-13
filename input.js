@@ -31,9 +31,19 @@ const handleUserInput = function (key) {
     console.log("d")
     connection.write("Move: right")
   //if key is s
-  } else {
+  } else if(key === "\u0073") {
     console.log("s")
     connection.write("Move: down")
+  
+    //special message keys
+    //z "no snakes in Ireland"
+  } else if (key === "\u007A") {
+    connection.write("Say: No snakes in Ireland!")
+    //if key is x
+  } else if (key === '\u0078'){
+    connection.write("Say: Don't eat your tail!")
+  } else if (key === '\u0063'){
+    connection.write("Say: Is it snake or snek?")
   }
 
 
