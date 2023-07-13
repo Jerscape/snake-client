@@ -1,4 +1,6 @@
 const net = require("net");
+const { stdout } = require("process");
+
 
 // establishes a connection with the game server
 const connect = function () {
@@ -27,6 +29,7 @@ const connect = function () {
 
   return conn;
 };
+
 
 
 module.exports = {
