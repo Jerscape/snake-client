@@ -1,4 +1,5 @@
-//did I put this in the right place or should it before connect?
+//imports
+const {commands} = require("./constants")
 
 let connection;
 
